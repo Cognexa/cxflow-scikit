@@ -5,8 +5,7 @@ from typing import Iterable, Tuple
 
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
-from cxflow.hooks.abstract_hook import AbstractHook
-from cxflow.hooks.accumulating_hook import AccumulatingHook
+from cxflow.hooks import AbstractHook, AccumulatingHook
 
 
 class ClassificationInfoHook(AccumulatingHook):
