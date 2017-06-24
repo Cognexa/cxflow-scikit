@@ -5,7 +5,7 @@ Scientific extension for `cxflow` framework.
 ## Development Status
 
 - [![Build Status](https://gitlab.com/Cognexa/cxflow-scikit/badges/master/build.svg)](https://gitlab.com/Cognexa/cxflow-scikit/builds/)
-- [![Development Status](https://img.shields.io/badge/status-CX%20PoC-yellow.svg?style=flat)]()
+- [![Development Status](https://img.shields.io/badge/status-CX%20Regular-brightgreen.svg?style=flat)]()
 - [![Master Developer](https://img.shields.io/badge/master-Petr%20Bělohlávek-lightgrey.svg?style=flat)]()
 
 ## Requirements
