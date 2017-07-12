@@ -19,7 +19,7 @@ setup(name='cxflow-scikit',
         'Programming Language :: Python :: 3.6'
       ],
       keywords='tensorflow wrapper',
-      url='https://gitlab.com/Cognexa/cxflow-scikit',
+      url='https://github.com/Cognexa/cxflow-scikit',
       author='Petr Belohlavek',
       author_email='me@petrbel.cz',
       license='MIT',
