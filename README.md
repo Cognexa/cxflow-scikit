@@ -1,12 +1,9 @@
 # cxflow-scikit
+[![CircleCI](https://circleci.com/gh/Cognexa/cxflow-scikit/tree/master.svg?style=shield)](https://circleci.com/gh/Cognexa/cxflow-scikit/tree/master)
+[![Development Status](https://img.shields.io/badge/status-CX%20Regular-brightgreen.svg?style=flat)]()
+[![Master Developer](https://img.shields.io/badge/master-Petr%20Bělohlávek-lightgrey.svg?style=flat)]()
 
 Scientific extension for `cxflow` framework.
-
-## Development Status
-
-- [![CircleCI](https://circleci.com/gh/Cognexa/cxflow-scikit/tree/master.svg?style=shield)](https://circleci.com/gh/Cognexa/cxflow-scikit/tree/master)
-- [![Development Status](https://img.shields.io/badge/status-CX%20Regular-brightgreen.svg?style=flat)]()
-- [![Master Developer](https://img.shields.io/badge/master-Petr%20Bělohlávek-lightgrey.svg?style=flat)]()
 
 ## Requirements
 The main dependency is cxflow (see [Cognexa/cxflow](https://github.com/Cognexa/cxflow)
