@@ -18,7 +18,7 @@ class ClassificationInfoHook(AccumulatingHook):
     -------------------------------------------------------
     Example usage in config
     -------------------------------------------------------
-    # compute and save classification statistics between net output `prediction` and stream source `labels`
+    # compute and save classification statistics between model output `prediction` and stream source `labels`
     hooks:
       - class: ClassificationInfoHook
         predicted_variable: prediction
