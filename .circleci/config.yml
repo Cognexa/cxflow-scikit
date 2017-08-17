@@ -19,7 +19,8 @@ references:
     run:
       name: Install.
       command: |
-        pip3 install git+https://github.com/Cognexa/cxflow.git
+        source <(curl -fsSL https://raw.githubusercontent.com/Cognexa/ci-utils/master/git-utils.sh)
+        fallback_pip_install_branch https://github.com/Cognexa/cxflow.git "$CIRCLE_BRANCH"
         pip3 install .
 
   test: &test
