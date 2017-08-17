@@ -5,10 +5,10 @@ from typing import Iterable, Tuple
 
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
-from cxflow.hooks import AbstractHook, AccumulatingHook
+from cxflow.hooks import AbstractHook, AccumulateVariables
 
 
-class ClassificationInfoHook(AccumulatingHook):
+class ClassificationInfoHook(AccumulateVariables):
     """
     Accumulate the specified prediction and gold variables
     and compute their classification statistics after each epoch.
