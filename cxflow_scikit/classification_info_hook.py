@@ -1,14 +1,14 @@
 """
 Module with a hook computing epoch statistics for classification tasks.
 """
+import cxflow as cx
+
 from typing import Iterable, Tuple
 
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
-from cxflow.hooks import AbstractHook, AccumulateVariables
 
-
-class ClassificationInfoHook(AccumulateVariables):
+class ClassificationInfoHook(cx.hooks.AccumulateVariables):
     """
     Accumulate the specified prediction and gold variables
     and compute their classification statistics after each epoch.
@@ -57,7 +57,7 @@ class ClassificationInfoHook(AccumulateVariables):
         accuracy = accuracy_score(gold, predicted, normalize=True)
         return accuracy, precision, recall, fscore
 
-    def _save_metrics(self, epoch_data: AbstractHook.EpochData) -> None:
+    def _save_metrics(self, epoch_data: cx.EpochData) -> None:
         """
         Compute the classification statistics from the accumulator and save the results to the given epoch data.
 
@@ -84,7 +84,7 @@ class ClassificationInfoHook(AccumulateVariables):
                 else:
                     stream_data[var_name] = metrics[i]
 
-    def after_epoch(self, epoch_data: AbstractHook.EpochData, **kwargs) -> None:
+    def after_epoch(self, epoch_data: cx.EpochData, **kwargs) -> None:
         """Compute and save the classification statistics and reset the accumulator."""
         self._save_metrics(epoch_data)
         super().after_epoch(**kwargs)
