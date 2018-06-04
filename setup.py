@@ -1,4 +1,3 @@
-from pip.req import parse_requirements
 from setuptools import setup
 
 setup(name='cxflow-scikit',
@@ -29,5 +28,5 @@ setup(name='cxflow-scikit',
       include_package_data=True,
       zip_safe=False,
       test_suite='cxflow_scikit.tests',
-      install_requires=[str(ir.req) for ir in parse_requirements('requirements.txt', session='hack')],
+      install_requires=[line for line in open('requirements.txt', 'r').readlines() if not line.startswith('#')],
      )
